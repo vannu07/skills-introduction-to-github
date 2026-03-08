@@ -10,12 +10,8 @@ jobs:
     permissions:
       issues: write
       models: read
-      contents: read
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v5
-
       - name: Run AI inference
         id: inference
         uses: actions/ai-inference@v1
